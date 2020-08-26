@@ -54,67 +54,67 @@ inquirer.prompt([
 
     let readme = "";
 
-    fs.appendFile("readme2.md", ("# " + answers.title) + '\n', err => {
+    fs.appendFile("README.md", ("# " + answers.title) + '\n', err => {
         if (err) {
             console.log(err);
         }
     })
 
-    fs.appendFile("readme2.md", '\n' + "![alt badge](https://img.shields.io/badge/License-" + answers.license + "-green)" + '\n', err => {
+    fs.appendFile("README.md", '\n' + "![alt badge](https://img.shields.io/badge/License-" + answers.license + "-green)" + '\n', err => {
         if (err) {
             console.log(err);
         }
     })
 
-    fs.appendFile("readme2.md", '\n' + "## Description" + '\n' + answers.description, err => {
+    fs.appendFile("README.md", '\n' + "## Description" + '\n' + answers.description, err => {
         if (err) {
             console.log(err);
         }
     })
 
-    fs.appendFile("readme2.md", '\n' + "## Table of Contents" + '\n' + "  * [Installation](#installation)" + '\n' + "  * [Usage](#usage)" + '\n' + "  * [License](#license)" + '\n' + "  * [Contributing](#contributing)" + '\n' + "  * [Tests](#tests)" + '\n' + "  * [Questions](#questions)", err => {
+    fs.appendFile("README.md", '\n' + "## Table of Contents" + '\n' + "  * [Installation](#installation)" + '\n' + "  * [Usage](#usage)" + '\n' + "  * [License](#license)" + '\n' + "  * [Contributing](#contributing)" + '\n' + "  * [Tests](#tests)" + '\n' + "  * [Questions](#questions)", err => {
         if (err) {
             console.log(err);
         }
     })
 
-    fs.appendFile("readme2.md", '\n' + "## Installation" + '\n' + "``` " + answers.install + " ```", err => {
+    fs.appendFile("README.md", '\n' + "## Installation" + '\n' + "``` " + answers.install + " ```", err => {
         if (err) {
             console.log(err);
         }
     })
 
-    fs.appendFile("readme2.md", '\n' + "## Usage" + '\n' + answers.usage, err => {
+    fs.appendFile("README.md", '\n' + "## Usage" + '\n' + answers.usage, err => {
         if (err) {
             console.log(err);
         }
     })
 
-    fs.appendFile("readme2.md", '\n' + "## License" + '\n' + ("This project is licensed under the " + answers.license + " license"), err => {
+    fs.appendFile("README.md", '\n' + "## License" + '\n' + ("This project is licensed under the " + answers.license + " license"), err => {
         if (err) {
             console.log(err);
         }
     })
 
-    fs.appendFile("readme2.md", '\n' + "## Contributing" + '\n' + answers.contribute, err => {
+    fs.appendFile("README.md", '\n' + "## Contributing" + '\n' + answers.contribute, err => {
         if (err) {
             console.log(err);
         }
     })
 
-    fs.appendFile("readme2.md", '\n' + "## Tests" + '\n' + "```" + answers.test + "```", err => {
+    fs.appendFile("README.md", '\n' + "## Tests" + '\n' + "```" + answers.test + "```", err => {
         if (err) {
             console.log(err);
         }
     })
 
-    fs.appendFile("readme2.md", '\n' + "## Questions" + '\n' + ("If you have any wuestions about the repo contact me directly at " + answers.email + ". You can find mor of my projects at " + "[" + answers.gitHub + "](https://github.com/" + answers.gitHub) + ")", err => {
+    fs.appendFile("README.md", '\n' + "## Questions" + '\n' + ("If you have any wuestions about the repo contact me directly at " + answers.email + ". You can find mor of my projects at " + "[" + answers.gitHub + "](https://github.com/" + answers.gitHub) + ")", err => {
         if (err) {
             console.log(err);
         }
     })
 
-    fs.writeFile("readme2.md", readme, err => {
+    fs.writeFile("README.md", readme, err => {
         if (err) {
             console.log(err);
         }
